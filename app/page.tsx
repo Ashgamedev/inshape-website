@@ -21,7 +21,9 @@ export default function InshapeFitnessWebsite() {
       <section className="bg-[#FFF7CC]">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 p-8 items-center">
           <div>
-            <h1 className="text-4xl font-bold mb-4">Personal Fitness Coaching That Works</h1>
+            <h1 className="text-4xl font-bold mb-4">
+              Personal Fitness Coaching That Works
+            </h1>
             <p className="mb-6 text-lg text-gray-800">
               Train smarter. Get stronger. Stay healthy with customized coaching plans.
             </p>
@@ -41,14 +43,16 @@ export default function InshapeFitnessWebsite() {
       <section id="services" className="max-w-7xl mx-auto p-8">
         <h2 className="text-3xl font-semibold mb-6">Our Services</h2>
         <div className="grid md:grid-cols-3 gap-6">
-          {["Personal Training", "Weight Loss Coaching", "Strength & Conditioning"].map((s) => (
-            <div key={s} className="rounded-2xl border p-6 shadow">
-              <h3 className="font-semibold text-lg mb-2">{s}</h3>
-              <p className="text-sm text-gray-700">
-                Customized programs designed to match your goals.
-              </p>
-            </div>
-          ))}
+          {["Personal Training", "Weight Loss Coaching", "Strength & Conditioning"].map(
+            (s) => (
+              <div key={s} className="rounded-2xl border p-6 shadow">
+                <h3 className="font-semibold text-lg mb-2">{s}</h3>
+                <p className="text-sm text-gray-700">
+                  Customized programs designed to match your goals.
+                </p>
+              </div>
+            )
+          )}
         </div>
       </section>
 
