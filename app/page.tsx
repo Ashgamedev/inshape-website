@@ -1,6 +1,4 @@
-"use client";
 import React from "react";
-import { motion } from "framer-motion";
 
 // Color theme
 // Primary: White
@@ -27,17 +25,15 @@ export default function InshapeFitnessWebsite() {
       {/* Hero */}
       <section className="bg-[#FFF7CC]">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 p-8 items-center">
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
+          <div>
             <h1 className="text-4xl md:text-5xl font-bold mb-4">Personal Fitness Coaching That Works</h1>
             <p className="mb-6 text-lg text-gray-800">Train smarter. Get stronger. Stay healthy with customized coaching plans.</p>
             <div className="flex gap-4">
               <button className="bg-[#E5533D] hover:bg-[#cf4a35] text-white px-5 py-3 rounded-lg">Start Free Trial</button>
             </div>
-          </motion.div>
+          </div>
 
-          <motion.img
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+          <img
             src="/our-history.png"
             alt="Inshape Fitness training session"
             className="w-full h-64 md:h-96 object-cover rounded-2xl shadow-lg"
@@ -97,4 +93,3 @@ export default function InshapeFitnessWebsite() {
     </div>
   );
 }
-
