@@ -16,21 +16,33 @@ export default function RootLayout({
       <body>
         {children}
 
-        {/* AI Voice Receptionist Widget */}
-        <iframe
-          src="https://ai.studio/apps/drive/1cwRrWAnHZ7H4HUBZvj6vg2m7GVDSwPhW"
+        {/* AI Receptionist Widget Container */}
+        <div
+          id="ai-receptionist-widget"
           style={{
             position: "fixed",
             bottom: "20px",
             right: "20px",
-            width: "360px",
-            height: "520px",
-            border: "none",
-            borderRadius: "12px",
+            width: "60px",
+            height: "60px",
+            borderRadius: "50%",
+            backgroundColor: "#ff6b4a",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            color: "#fff",
+            fontSize: "26px",
+            cursor: "pointer",
             zIndex: 9999,
+            boxShadow: "0 4px 12px rgba(0,0,0,0.2)",
           }}
-          allow="microphone"
-        />
+          title="Talk to our AI receptionist"
+          onClick={() => {
+            alert("AI receptionist coming next 🚀");
+          }}
+        >
+          🎤
+        </div>
       </body>
     </html>
   );
